@@ -1,0 +1,12 @@
+
+
+__pycache__/
+package-lock.json
+*.pt
+data/
+*.txt
+*.zip
+*.log
+*.jpg
+*.png
+*.gif
