@@ -1,6 +1,6 @@
 # FORS Diffusion Sampler (DDPM-like)
 
-Here's a minimal implementation of the **FORS DDPM‑like sampler** (Section 4.2 of `fors.pdf` in ![Chen et al. (2026)](https://arxiv.org/pdf/2602.01338)) and a driver notebook for comparing it to DDPM and DDIM on CelebA.
+Here's a minimal implementation of the **FORS DDPM‑like sampler** (Section 4.2 of `fors.pdf` in [Chen et al. (2026)](https://arxiv.org/pdf/2602.01338)) and a driver notebook for comparing it to DDPM and DDIM on CelebA.
 
 **Results (CelebA, DDPM vs DDIM vs FORS)**
 
