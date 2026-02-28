@@ -4,6 +4,7 @@ from typing import Optional
 from tqdm import tqdm
 import torch
 
+# TODO: Implement continuous batching to solve rejection sampling tail issue over large batches.
 
 @dataclass
 class FORSConfig:
