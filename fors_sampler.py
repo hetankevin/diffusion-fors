@@ -82,6 +82,9 @@ class FORSSampler:
         sigma_cur_sq = 1.0 - alpha_bar_cur
         sigma_prev_sq = 1.0 - alpha_bar_prev
         eta = sigma_cur_sq / (alpha_step ** 2) - sigma_prev_sq
+        # NOTE: If eta frequently becomes negative here, it usually indicates a logical mismatch
+        # between the timestep indexing / scheduler schedule and the derivation in the paper.
+        # Clamping avoids NaNs but can silently change the proposal distribution.
         eta = torch.clamp(eta, min=1e-42)
 
         bar_x = x_next / alpha_step
